@@ -24,7 +24,7 @@ namespace MarsRover
                 {
                     plateau.LocateRover(new Rover(new Point(Convert.ToInt32(pieces[0]), Convert.ToInt32(pieces[1])), pieces[2]));
 
-                    Console.WriteLine("Move the rover");
+                    Console.WriteLine("Move the rover..");
                     var commands = Console.ReadLine();
 
                     commands.ToList().ForEach(x => plateau.MoveRover(x.ToString()));
